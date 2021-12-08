@@ -9,7 +9,16 @@
     <h1>Góry</h1>
     <button id="przycisk">Załaduj góry</button>
     <div id="gory"></div>
-
+    <style type="text/css">
+        head, body{
+            background-color: teal;
+            color: white;
+        }
+        ul, li{
+            text-align: center;
+            list-style-type: none;
+        }
+    </style>
     <script type="text/javascript">
         document.getElementById("przycisk").addEventListener("click",ladujgory);
             function ladujgory(){
@@ -26,7 +35,7 @@
                                     <li>ID: ${gory[i].id}</li>
                                     <li>Title: ${gory[i].title}</li>
                                     <li>Name: ${gory[i].name}</li>
-                                    <li>Zdjęcie prezentujące: ${gory[i].img}</li>
+                                    <li>${gory[i].img}</li>
                                 </ul>
                             `;
                         }
