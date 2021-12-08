@@ -11,7 +11,11 @@
     <div id="gory"></div>
 
     <script type="text/javascript">
-
+        document.getElementById("przycisk").addEventListener("click",ladujgory);
+                function ladujgory(){
+                    var xhr = new XMLHttpRequest();
+                    xhr.open('GET','gory.json',true);
+                }
     </script>
 </body>
 </html>
